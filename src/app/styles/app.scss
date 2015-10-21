@@ -8,9 +8,10 @@ body {
 }
 
 .container {
-	width: 1170px;
+	display: block;
+	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 15px;
 }
 
 .navbar {
@@ -22,10 +23,9 @@ body {
 	& > a {
 		float: left;
 		color: lightgrey;
-		padding: 15px 15px;
 		font-size: 18px;
+		padding: 15px;
 		line-height: 20px;
-		height: 50px;
 	}
 
 	ul {

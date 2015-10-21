@@ -1,9 +1,8 @@
 <nav class="navbar">
-  <a href="#">brian.staruk.me</a>
+  <a href="#" ui-sref="home">brian.staruk.me</a>
 
   <ul>
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
+    <li ng-class="{active: state.is('home')}"><a href="#" ui-sref="home">Home</a></li>
+    <li ng-class="{active: state.is('about')}"><a href="#" ui-sref="about">About</a></li>
   </ul>
 </nav>
