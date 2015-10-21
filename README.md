@@ -3,9 +3,9 @@ brian.staruk.me 2015 Angularjs User Interface
 
 ## NPM, Bower and Gulp
 To run: 
-+ npm install
-+ bower install
-+ gulp serve
+1. npm install
+2. bower install
+3. gulp serve
 
 To build (into /dist/):
-+ gulp build
+1. gulp build
