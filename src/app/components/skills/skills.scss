@@ -1,16 +1,30 @@
-.boxy {
-  margin: $gapxxx auto;
-  width: 80%;
+.skills-wrapper {
+  max-width: 80%;
+  margin: $gapxxx auto $gapxx;
   text-align: center;
-  li {
-    display: inline-block;
-    padding: 7px 14px;
-    color: $color-purple1;
-    font-size: rem-calc(15);
-    background-color: $font-color-base;
-    margin: 0 4px 4px 0;
-    &.alt {
-      color: #b7328d;
+  .skills-list {
+    margin-bottom: $gap;
+    li {
+      display: inline-block;
+      font-size: rem-calc(15);
+      background-color: rgba(#000, .3);
+      margin: 0 4px 4px 0;
+      outline: none;
+      a {
+        display: block;
+        padding: 7px 14px;
+        color: $font-color-base;
+        text-decoration: none;
+        &.alt {
+          color: #b7328d;
+        }
+        &.active {
+          color: $color-orange1;
+        }
+      }
     }
+  }
+  .skills-desc {
+
   }
 }

@@ -1,5 +1,8 @@
-<ul class="boxy">
-    <li ng-repeat="skill in skills track by skill.id" ng-class="{ 'alt': skill.heart }">
-        {{skill.title}}
-    </li>
-</ul>
+<div class="skills-wrapper">
+    <ul class="skills-list">
+        <li ng-repeat="skill in skills track by skill.id">
+            <a href="#" ng-click="setActiveSkill(skill.id)" ng-class="{ 'active': activeSkill == skill.id }">{{skill.title}}</a>
+        </li>
+    </ul>
+    <div ng-show="activeSkill != null" class="skills-desc">{{skills[activeSkill].desc}}</div>
+</div>
