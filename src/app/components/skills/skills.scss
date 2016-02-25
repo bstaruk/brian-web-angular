@@ -2,6 +2,15 @@
   max-width: 80%;
   margin: $gapxxx auto $gapxx;
   text-align: center;
+  h3 {
+    font-family: $font-deco;
+    font-size: rem-calc(28);
+    color: $font-color-bright;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 0 #111;
+    letter-spacing: .02em;
+    margin-bottom: $gap;
+  }
   .skills-list {
     margin: 0 auto $gap;
     max-width: 420px;
