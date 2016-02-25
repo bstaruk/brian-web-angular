@@ -3,7 +3,8 @@
   margin: $gapxxx auto $gapxx;
   text-align: center;
   .skills-list {
-    margin-bottom: $gap;
+    margin: 0 auto $gap;
+    max-width: 420px;
     li {
       display: inline-block;
       font-size: rem-calc(15);
