@@ -29,7 +29,7 @@ $rem-base: 16px;
 $font-color-base: #e0d9e2;
 $font-color-bright: #f3ecf5;
 
-// TRANSITIONS
+// TRANSITIONS, TRANSFORMS
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -37,6 +37,20 @@ $font-color-bright: #f3ecf5;
   -o-transition: $args;
   transition: $args;
 }
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+
+// COLORS
+$color-yellow1: #ffcc00;
+$color-yellow2: #ffe990;
+$color-purple1: #271c32;
+
 
 // GAPS
 $gap: 10px;

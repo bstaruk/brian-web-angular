@@ -11,9 +11,11 @@
       display: inline-block;
       margin-right: $gap;
       a {
+        position: relative;
         display: block;
-        font-size: rem-calc(18);
+        font-size: rem-calc(17);
         color: $font-color-base;
+        letter-spacing: .03em;
         padding: 15px 20px;
         line-height: 20px;
         text-decoration: none;
@@ -21,10 +23,22 @@
         border-radius: 3px;
         background-color: rgba(#000, 0);
         @include transition(all 0.3s ease);
+        &:before {
+          content: "";
+          display: none;
+          position: absolute;
+          left: 10%;
+          bottom: 7px;
+          height: 4px;
+          width: 80%;
+          background-color: $color-yellow1;
+        }
       }
       &.active a {
-        color: #ffcc00;
-        background-color: rgba(#000, .15);
+        color: $color-yellow1;
+        &:before {
+          display: block;
+        }
       }
       &:last-of-type {
         margin-right: 0;

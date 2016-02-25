@@ -9,9 +9,9 @@
       font-size: rem-calc(52);
       letter-spacing: .03em;
       font-weight: bold;
-      color: #ffeb9b;
+      color: $color-yellow2;
       text-decoration: none;
-      text-shadow: 1px 1px 1px #111;
+      text-shadow: 1px 1px 1px rgba(#000, .6);
       @include transition(all 0.25s ease);
       &:hover {
         font-size: rem-calc(54);

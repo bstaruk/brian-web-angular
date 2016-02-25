@@ -27,12 +27,40 @@ body {
     font-weight: bold;
     color: $font-color-bright;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(#000, .6);
     letter-spacing: .04em;
     text-align: center;
   }
   p {
     &.desc {
       text-align: center;
+    }
+  }
+  ul {
+    margin: $gapxxx auto;
+    width: 80%;
+    &.boxy {
+      text-align: center;
+      li {
+        display: inline-block;
+        position: relative;
+        padding: 7px 14px;
+        color: $color-purple1;
+        font-size: rem-calc(15);
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 0; left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: $font-color-base;
+        }
+        &.alt {
+          color: #b7328d;
+        }
+      }
     }
   }
 }
