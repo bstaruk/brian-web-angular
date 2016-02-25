@@ -5,6 +5,9 @@
 body {
 	font-family: $font-sans;
 	font-size: rem-calc(16);
+	background: #4423B7 url('../assets/images/bg-body.png') left top repeat;
+	background-size: 248px 248px;
+	color: #f0f0f0;
 }
 
 .container {
@@ -12,42 +15,4 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 15px;
-}
-
-.navbar {
-	position: relative;
-	min-height: 50px;
-	margin-bottom: 20px;
-	background-color: #222;
-
-	& > a {
-		float: left;
-		color: lightgrey;
-		font-size: 18px;
-		padding: 15px;
-		line-height: 20px;
-	}
-
-	ul {
-		float: left;
-		padding: 0;
-		margin: 0;
-
-		li {
-			float: left;
-			position: relative;
-			display: block;
-
-			a {
-				color: white;
-				position: relative;
-				display: block;
-				padding: 15px;
-				line-height: 20px;
-			}
-			&.active a {
-				background-color: black;
-			}
-		}
-	}
 }
