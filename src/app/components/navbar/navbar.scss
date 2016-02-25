@@ -13,7 +13,7 @@
       a {
         position: relative;
         display: block;
-        font-size: rem-calc(17);
+        font-size: rem-calc(18);
         color: $font-color-base;
         letter-spacing: .03em;
         padding: 15px 20px;
@@ -31,11 +31,11 @@
           bottom: 7px;
           height: 4px;
           width: 80%;
-          background-color: $color-yellow1;
+          background-color: $color-green1;
         }
       }
       &.active a {
-        color: $color-yellow1;
+        color: $color-green1;
         &:before {
           display: block;
         }

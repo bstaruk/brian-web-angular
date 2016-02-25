@@ -1,26 +1,19 @@
 #masthead {
   text-align: center;
-  margin: $gapxxx 0 $gapx;
+  margin: $gapxxx 0 $gap;
   .title {
     a {
       display: inline-block;
-      height: 60px;
-      line-height: 60px;
-      font-size: rem-calc(52);
+      font-family: $font-serif;
+      font-size: rem-calc(58);
       letter-spacing: .03em;
-      font-weight: bold;
-      color: $color-yellow2;
+      color: $color-yellow1;
       text-decoration: none;
-      text-shadow: 1px 1px 1px rgba(#000, .6);
-      @include transition(all 0.25s ease);
-      &:hover {
-        font-size: rem-calc(54);
-      }
+      text-shadow: 1px 1px 0 #111;
     }
   }
   h1 {
     font-size: rem-calc(18);
     font-style: italic;
-    margin: 2px 0 0;
   }
 }

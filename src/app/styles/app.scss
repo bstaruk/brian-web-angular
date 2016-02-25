@@ -23,12 +23,12 @@ body {
     margin-bottom: $gap;
   }
   h2 {
-    font-size: rem-calc(38);
-    font-weight: bold;
-    color: $font-color-bright;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(#000, .6);
-    letter-spacing: .04em;
+    font-family: $font-serif;
+    font-size: rem-calc(44);
+    color: $color-blue1;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 0 #111;
+    letter-spacing: .02em;
     text-align: center;
   }
   p {
@@ -43,20 +43,10 @@ body {
       text-align: center;
       li {
         display: inline-block;
-        position: relative;
         padding: 7px 14px;
         color: $color-purple1;
         font-size: rem-calc(15);
-        &:before {
-          content: "";
-          display: block;
-          position: absolute;
-          z-index: -1;
-          top: 0; left: 0;
-          height: 100%;
-          width: 100%;
-          background-color: $font-color-base;
-        }
+        background-color: $font-color-base;
         &.alt {
           color: #b7328d;
         }
