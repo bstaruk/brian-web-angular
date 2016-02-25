@@ -16,7 +16,8 @@
     padding: 4px 0;
     text-align: center;
   }
-  input[type="text"] {
+  input[type="text"],
+  input[type="email"] {
     display: block;
     width: 96%;
     padding: 10px 2%;
@@ -28,6 +29,9 @@
     background: $color-white2;
     outline: none;
     text-align: center;
+    &.error {
+      border-bottom: 5px solid $color-yellow1;
+    }
   }
   textarea {
     display: block;
@@ -41,6 +45,9 @@
     background: $color-white2;
     outline: none;
     text-align: center;
+    &.error {
+      border-bottom: 5px solid $color-yellow1;
+    }
   }
   input[type="submit"] {
     display: block;

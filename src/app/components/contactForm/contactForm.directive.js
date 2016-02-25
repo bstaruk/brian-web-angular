@@ -7,9 +7,11 @@
         restrict: 'E',
         templateUrl: 'app/components/contactForm/contactForm.html',
         controller: function($scope) {
-          $scope.activeSkill = 0;
-          $scope.setActiveSkill = function(id) {
-            $scope.activeSkill = id;
+          $scope.errors = {};
+          $scope.submitted = false;
+          $scope.handleForm = function(form) {
+            $scope.submitted = true;
+            window.console.log(form);
           }
         }
       };

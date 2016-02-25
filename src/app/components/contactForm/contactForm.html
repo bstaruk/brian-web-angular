@@ -1,19 +1,23 @@
-<form class="contactForm">
+<form name="contactForm" class="contactForm" ng-submit="contactForm.$valid && handleForm(contactForm)" novalidate>
+    <div ng-show="(submitted && contactForm.$valid)" class="success">Success</div>
     <div class="row">
         <div class="half">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" tabindex="1">
+            <input type="text" name="name" id="name" tabindex="1" ng-class="{error: (submitted || contactForm.name.$dirty) && contactForm.name.$invalid}" ng-model="form.name" ng-change="submitted=false" required>
+            <div ng-show="(submitted || contactForm.name.$dirty) && contactForm.name.$invalid" class="error">Please provide a name</div>
         </div>
         <div class="half">
             <label for="email">Email:</label>
-            <input type="text" name="email" id="email" tabindex="2">
+            <input type="email" name="email" id="email" tabindex="2" ng-class="{error: (submitted || contactForm.email.$dirty && contactForm.email.$invalid}" ng-model="form.email" ng-change="submitted=false" required>
+            <div ng-show="(submitted || contactForm.email.$dirty) && contactForm.email.$invalid" class="error">Please provide a valid email</div>
         </div>
     </div>
     <div class="row">
         <label for="message">Message:</label>
-        <textarea name="message" id="message" rows="5" tabindex="3"></textarea>
+        <textarea name="message" id="message" rows="5" tabindex="3"  ng-class="{error: (submitted || contactForm.message.$dirty) && contactForm.message.$invalid}" ng-model="form.message" ng-change="submitted=false" required></textarea>
+        <div ng-show="(submitted || contactForm.message.$dirty) && contactForm.message.$invalid" class="error">Please provide a message</div>
     </div>
     <div class="row">
-        <input type="submit" name="submit" id="submit" tabindex="4">
+        <input type="submit" name="submit" id="submit" tabindex="4" ng-click="submitted=true">
     </div>
 </form>
