@@ -1,5 +1,5 @@
 <ul class="boxy">
-    <li ng-repeat="skill in skills track by skill.id">
+    <li ng-repeat="skill in skills track by skill.id" ng-class="{ 'alt': skill.heart }">
         {{skill.title}}
     </li>
 </ul>

@@ -10,33 +10,28 @@
           $scope.skills = [
             {
               id: 1,
-              title: 'HTML, CSS & JS',
-              shown: false
+              title: 'HTML, CSS & JS'
             },
             {
               id: 2,
-              title: 'jQuery',
-              shown: false
+              title: 'jQuery'
             },
             {
               id: 3,
               title: 'AngularJS',
-              shown: false
+              heart: true
             },
             {
               id: 4,
-              title: 'ReactJS',
-              shown: false
+              title: 'ReactJS'
             },
             {
               id: 5,
-              title: 'PHP',
-              shown: false
+              title: 'PHP'
             },
             {
               id: 6,
-              title: 'LAMP System Ops',
-              shown: false
+              title: 'LAMP System Ops'
             }
           ];
         }
