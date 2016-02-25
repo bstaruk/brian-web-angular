@@ -1,17 +1,15 @@
-<div ng-controller="MainController as main">
+<div ng-controller="MainController as page">
 
 	<masthead></masthead>
 
 	<navbar></navbar>
 
-	<div class="content container">
-		<h2>About Me</h2>
-		<p class="desc">My name is Brian Staruk and I am a 28 year-old web developer (LAMP) from Boston, MA who currently specializes in front-end and app development. I grew up in Central Massachusetts, graduated from high school in 2005, and have been honing my craft full-time in various software engineering roles ever since.</p>
-		<ul class="boxy">
-			<li ng-repeat="skill in main.skills track by skill.id">
-				{{skill.title}}
-			</li>
-		</ul>
+	<div class="container">
+		<div class="page-header">
+			<h2>{{page.title}}</h2>
+			<p>My name is Brian Staruk and I am a 28 year-old web developer (LAMP) from Boston, MA who currently specializes in front-end and app development. I grew up in Central Massachusetts, graduated from high school in 2005, and have been honing my craft full-time in various software engineering roles ever since.</p>
+		</div>
+		<skills></skills>
 	</div>
 
 </div>

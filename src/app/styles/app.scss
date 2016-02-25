@@ -18,10 +18,8 @@ body {
   padding: 0 $gapxx;
 }
 
-.content {
-  h1, h2, h3, h4, h5, p, ul, ol, pre, blockquote {
-    margin-bottom: $gap;
-  }
+.page-header {
+  text-align: center;
   h2 {
     font-family: $font-deco;
     font-size: rem-calc(44);
@@ -29,29 +27,9 @@ body {
     text-transform: lowercase;
     text-shadow: 1px 1px 0 #111;
     letter-spacing: .02em;
-    text-align: center;
+    margin-bottom: $gap;
   }
   p {
-    &.desc {
-      text-align: center;
-    }
-  }
-  ul {
-    margin: $gapxxx auto;
-    width: 80%;
-    &.boxy {
-      text-align: center;
-      li {
-        display: inline-block;
-        padding: 7px 14px;
-        color: $color-purple1;
-        font-size: rem-calc(15);
-        background-color: $font-color-base;
-        margin: 0 4px 4px 0;
-        &.alt {
-          color: #b7328d;
-        }
-      }
-    }
+    margin-bottom: $gap;
   }
 }

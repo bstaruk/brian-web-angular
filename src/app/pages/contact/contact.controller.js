@@ -1,12 +1,11 @@
-(function () {
+(function() {
 	'use strict';
 
 	angular
 		.module('brianWebAngular')
-		.controller('ContactController', ContactController);
+		.controller('ContactController', function () {
+			var vm = this;
+			vm.title = 'contact me';
+		});
 
-	/** @ngInject */
-	function ContactController() {
-		// stuff goes here
-	}
 })();
