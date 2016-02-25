@@ -1,43 +1,46 @@
 // FONT STYLES
 @font-face {
-	font-family: 'Source Sans Pro';
-	src: url('../assets/fonts/sourcesanspro-regular.eot');
-	src: url('../assets/fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
-	url('../assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
-	url('../assets/fonts/sourcesanspro-regular.woff') format('woff'),
-	url('../assets/fonts/sourcesanspro-regular.ttf') format('truetype'),
-	url('../assets/fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/sourcesanspro-regular.eot');
+  src: url('../assets/fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
+  url('../assets/fonts/sourcesanspro-regular.woff') format('woff'),
+  url('../assets/fonts/sourcesanspro-regular.ttf') format('truetype'),
+  url('../assets/fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-	font-family: 'Droid Serif';
-	src: url('../assets/fonts/droidserif.eot');
-	src: url('../assets/fonts/droidserif.eot?#iefix') format('embedded-opentype'),
-	url('../assets/fonts/droidserif.woff2') format('woff2'),
-	url('../assets/fonts/droidserif.woff') format('woff'),
-	url('../assets/fonts/droidserif.ttf') format('truetype'),
-	url('../assets/fonts/droidserif.svg#source_sans_proregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Droid Serif';
+  src: url('../assets/fonts/droidserif.eot');
+  src: url('../assets/fonts/droidserif.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/droidserif.woff2') format('woff2'),
+  url('../assets/fonts/droidserif.woff') format('woff'),
+  url('../assets/fonts/droidserif.ttf') format('truetype'),
+  url('../assets/fonts/droidserif.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 $font-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
 $rem-base: 16px;
-$font-color-base: #fbf0ff;
+$font-color-base: #e0d9e2;
+$font-color-bright: #f3ecf5;
 
 // TRANSITIONS
 @mixin transition($args...) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-ms-transition: $args;
-	-o-transition: $args;
-	transition: $args;
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
-
 
 // GAPS
 $gap: 10px;
 $gapx: 15px;
 $gapxx: 25px;
-$gapxxx: 60px;
+$gapxxx: 40px;
+$gapxxxx: 50px;

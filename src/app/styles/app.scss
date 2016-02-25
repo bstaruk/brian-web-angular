@@ -3,16 +3,36 @@
 @import "_mixins";
 
 body {
-	font-family: $font-sans;
-	font-size: rem-calc(16);
-	background: #4423B7 url('../assets/images/bg-body.png') left top repeat;
-	background-size: 248px 248px;
-	color: $font-color-base;
+  font-family: $font-sans;
+  font-size: rem-calc(16);
+  background: #4423B7 url('../assets/images/bg-body.png') left top repeat;
+  background-size: 248px 248px;
+  color: $font-color-base;
+  line-height: 1.4;
 }
 
 .container {
-	display: block;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: $gapxx;
+  display: block;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 $gapxx;
+}
+
+.content {
+  h1, h2, h3, h4, h5, p, ul, ol, pre, blockquote {
+    margin-bottom: $gap;
+  }
+  h2 {
+    font-size: rem-calc(38);
+    font-weight: bold;
+    color: $font-color-bright;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    text-align: center;
+  }
+  p {
+    &.desc {
+      text-align: center;
+    }
+  }
 }

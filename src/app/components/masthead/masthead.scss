@@ -1,5 +1,6 @@
 #masthead {
   text-align: center;
+  margin: $gapxxx 0 $gapx;
   .title {
     a {
       display: inline-block;
@@ -8,7 +9,7 @@
       font-size: rem-calc(52);
       letter-spacing: .03em;
       font-weight: bold;
-      color: $font-color-base;
+      color: #ffeb9b;
       text-decoration: none;
       text-shadow: 1px 1px 1px #111;
       @include transition(all 0.25s ease);
@@ -16,5 +17,10 @@
         font-size: rem-calc(54);
       }
     }
+  }
+  h1 {
+    font-size: rem-calc(18);
+    font-style: italic;
+    margin: 2px 0 0;
   }
 }

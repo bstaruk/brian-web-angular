@@ -1,7 +1,7 @@
 #navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: $gapxxx;
   ul {
     display: block;
     padding: 0;
@@ -12,6 +12,7 @@
       margin-right: $gap;
       a {
         display: block;
+        font-size: rem-calc(18);
         color: $font-color-base;
         padding: 15px 20px;
         line-height: 20px;
