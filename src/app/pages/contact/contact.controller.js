@@ -3,10 +3,10 @@
 
 	angular
 		.module('brianWebAngular')
-		.controller('AboutController', AboutController);
+		.controller('ContactController', ContactController);
 
 	/** @ngInject */
-	function AboutController() {
+	function ContactController() {
 		// stuff goes here
 	}
 })();

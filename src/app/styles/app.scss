@@ -7,12 +7,12 @@ body {
 	font-size: rem-calc(16);
 	background: #4423B7 url('../assets/images/bg-body.png') left top repeat;
 	background-size: 248px 248px;
-	color: #f0f0f0;
+	color: $font-color-base;
 }
 
 .container {
 	display: block;
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 15px;
+	padding: $gapxx;
 }

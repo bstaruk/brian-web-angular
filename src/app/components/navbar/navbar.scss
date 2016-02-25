@@ -2,35 +2,31 @@
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  background-color: #222;
-
-  & > a {
-    float: left;
-    color: lightgrey;
-    font-size: 18px;
-    padding: 15px;
-    line-height: 20px;
-  }
-
   ul {
-    float: left;
+    display: block;
     padding: 0;
     margin: 0;
-
+    text-align: center;
     li {
-      float: left;
-      position: relative;
-      display: block;
-
+      display: inline-block;
+      margin-right: $gap;
       a {
-        color: white;
-        position: relative;
         display: block;
-        padding: 15px;
+        color: $font-color-base;
+        padding: 15px 20px;
         line-height: 20px;
+        text-decoration: none;
+        text-transform: lowercase;
+        border-radius: 3px;
+        background-color: rgba(#000, 0);
+        @include transition(all 0.3s ease);
       }
       &.active a {
-        background-color: black;
+        color: #ffcc00;
+        background-color: rgba(#000, .15);
+      }
+      &:last-of-type {
+        margin-right: 0;
       }
     }
   }

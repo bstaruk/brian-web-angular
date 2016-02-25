@@ -11,11 +11,11 @@
 					controller: 'MainController',
 					controllerAs: 'main'
 				})
-				.state('about', {
-					url: '/about',
-					templateUrl: 'app/pages/about/about.html',
-					controller: 'AboutController',
-					controllerAs: 'about'
+				.state('contact', {
+					url: '/contact',
+					templateUrl: 'app/pages/contact/contact.html',
+					controller: 'ContactController',
+					controllerAs: 'contact'
 				});
 			$urlRouterProvider.otherwise('/');
 

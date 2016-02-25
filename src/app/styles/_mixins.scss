@@ -24,3 +24,20 @@
 $font-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
 $rem-base: 16px;
+$font-color-base: #fbf0ff;
+
+// TRANSITIONS
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+
+// GAPS
+$gap: 10px;
+$gapx: 15px;
+$gapxx: 25px;
+$gapxxx: 60px;

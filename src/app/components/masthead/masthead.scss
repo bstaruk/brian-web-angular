@@ -1,4 +1,20 @@
 #masthead {
-  font-size: rem-calc(50);
   text-align: center;
+  .title {
+    a {
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      font-size: rem-calc(52);
+      letter-spacing: .03em;
+      font-weight: bold;
+      color: $font-color-base;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #111;
+      @include transition(all 0.25s ease);
+      &:hover {
+        font-size: rem-calc(54);
+      }
+    }
+  }
 }
