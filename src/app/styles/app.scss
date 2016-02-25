@@ -5,9 +5,9 @@
 body {
   font-family: $font-sans;
   font-size: rem-calc(16);
-  background: #4423B7 url('../assets/images/bg-body.png') left top repeat;
+  background: $color-purple1 url('../assets/images/bg-body.png') left top repeat;
   background-size: 248px 248px;
-  color: $font-color-base;
+  color: $color-white2;
   line-height: 1.4;
 }
 

@@ -26,10 +26,8 @@
 $font-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-deco: 'Francois One', Georgia, Times, 'Times New Roman', serif;
 $rem-base: 16px;
-$font-color-base: #e0d9e2;
-$font-color-bright: #f3ecf5;
 
-// TRANSITIONS, TRANSFORMS
+// UTILITIES
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -44,9 +42,17 @@ $font-color-bright: #f3ecf5;
   -webkit-transform: $transforms;
   transform: $transforms;
 }
-
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 // COLORS
+$color-white1: #f3ecf5;
+$color-white2: #e0d9e2;
 $color-yellow1: #ffcc00;
 $color-orange1: #ffac25;
 $color-purple1: #271c32;
