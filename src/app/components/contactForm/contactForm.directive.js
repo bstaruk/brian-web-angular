@@ -9,10 +9,13 @@
         controller: function($scope) {
           $scope.errors = {};
           $scope.submitted = false;
+          $scope.notSubmitted = function() {
+            $scope.submitted = false;
+          };
           $scope.handleForm = function(form) {
             $scope.submitted = true;
             window.console.log(form);
-          }
+          };
         }
       };
     });
