@@ -8,32 +8,41 @@
         templateUrl: 'app/components/contactForm/contactForm.html',
         controller: function($scope, $http, $window) {
 
+          $http.defaults.headers.post["Content-Type"] = "text/plain";
+
           $scope.errors = {};
           $scope.submitted = false;
 
           $scope.sendMail = function() {
-            var apiURL = 'https://api.sendgrid.com/api/mail.send.json',
-            mailJSON ={
-              'api_user': 'bstaruk',
-              'api_key': 'w-RTWPlyQGmzZDoaBwwEww',
-              'to[]': 'bstaruk@gmail.com',
-              'toname[]': 'Brian Staruk',
-              'subject': 'Contact Form Submission - brian.staruk.me',
-              'text': 'this is a test email',
-              'from': 'noreply@staruk.me'
-            };
-            $http.post(apiURL, mailJSON).
-            success(function(data, status, headers, config) {
+            $http({
+              method: 'POST',
+              url: 'https://api.sendgrid.com/api/mail.send.json',
+              data: {
+                'api_user': 'bstaruk',
+                'api_key': 'w-RTWPlyQGmzZDoaBwwEww',
+                'to[]': 'bstaruk@gmail.com',
+                'toname[]': 'Brian Staruk',
+                'subject': 'Contact Form Submission - brian.staruk.me',
+                'text': 'this is a test email',
+                'from': 'noreply@staruk.me'
+              },
+              headers: {
+                'Content-Type': 'application/json' ,
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+                'Access-Control-Allow-Headers':'X-Requested-With'
+              }
+            }).success(function (data, status, headers, config) {
               $window.console.log('successful email send.');
               $window.console.log('status: ' + status);
               $window.console.log('data: ' + data);
               $window.console.log('headers: ' + headers);
               $window.console.log('config: ' + config);
-            }).error(function(data, status) {
+            }).error(function (data, status) {
               $window.console.log('error sending email.');
               $window.console.log('status: ' + status);
             });
-            $window.console.log(mailJSON);
+
           };
 
           $scope.notSubmitted = function() {
