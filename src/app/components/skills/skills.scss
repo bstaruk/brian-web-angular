@@ -22,8 +22,6 @@
 		li {
 			display: inline-block;
 			font-size: rem-calc(15);
-			background-color: rgba(#000, .3);
-			border-radius: 3px;
 			margin: 0 4px 4px 0;
 			outline: none;
 			a {
@@ -31,11 +29,17 @@
 				padding: 7px 14px;
 				color: $color-white2;
 				text-decoration: none;
+				background-color: rgba(#000, .25);
+				border-radius: 3px;
+				@include transition(all 0.3s ease);
 				&.alt {
 					color: #b7328d;
 				}
-				&.active {
+				&.active, &.active:hover {
 					color: $color-orange1;
+				}
+				&:hover {
+					color: $color-white1;
 				}
 			}
 		}

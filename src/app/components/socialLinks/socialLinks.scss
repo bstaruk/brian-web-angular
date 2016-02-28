@@ -2,6 +2,7 @@ $social-button-height: 50px;
 $social-button-width: 50px;
 .social {
 	margin: $gapxx auto;
+	text-align: center;
 	li {
 		display: inline-block;
 		width: $social-button-width;

@@ -2,8 +2,8 @@
 <html ng-app="brianWebAngular">
 <head>
 	<meta charset="utf-8">
-	<title>brianWebAngular</title>
-	<meta name="description" content="Personal website of Boston-based Web Developer, Brian Staruk.">
+	<title ng-bind="PageMeta.get('title')">brian.staruk.me</title>
+	<meta name="description" content="{{ PageMeta.get('description') }}">
 	<meta name="viewport" content="width=device-width">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 

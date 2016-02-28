@@ -18,8 +18,9 @@
 				});
 			$urlRouterProvider.otherwise('/');
 		})
-		.run(function ($rootScope, $window, $location, $timeout, $state) {
+		.run(function ($rootScope, $window, $location, $timeout, $state, PageMeta) {
 			$rootScope.state = $state;
+			$rootScope.PageMeta = PageMeta;
 		});
 
 })();
