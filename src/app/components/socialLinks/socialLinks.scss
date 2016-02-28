@@ -1,0 +1,18 @@
+.social {
+	li {
+		display: inline-block;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		a {
+			display: block;
+			padding: 10px;
+			color: $color-white1;
+			font-size: rem-calc(25);
+			@include transition(all 0.3s ease);
+			&:hover {
+				color: $color-yellow1;
+			}
+		}
+	}
+}

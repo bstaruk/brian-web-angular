@@ -1,15 +1,17 @@
 <div ng-controller="ContactController as page">
 
-    <masthead></masthead>
+	<masthead></masthead>
 
-    <navbar></navbar>
+	<navbar></navbar>
 
-    <div class="container">
-        <div class="page-header">
-            <h2>{{page.title}}</h2>
-            <p>If your name isn't Mom, chances are I won't pick up your call. I do check my emails more than any person should, though! Use the contact form below to send me a message, and I will get back to you as soon as possible.</p>
-        </div>
-        <contact-form></contact-form>
-    </div>
+	<div class="container">
+		<div class="page-header">
+			<h2>{{page.title}}</h2>
+			<p>If your name isn't Mom, chances are I won't pick up your call. I do check my emails more than any person
+				should, though! Shoot me a line at <span class="email" title="clicking disabled to prevent spam">ihatespam@gmail.com</span> or connect with me via social
+				media if you'd like to chat.</p>
+			<social-links></social-links>
+		</div>
+	</div>
 
 </div>
