@@ -9,7 +9,6 @@
     text-align: center;
     li {
       display: inline-block;
-      margin-right: $gap;
       a {
         position: relative;
         display: block;
@@ -40,9 +39,12 @@
           display: block;
         }
       }
-      &:last-of-type {
-        margin-right: 0;
-      }
+			@media screen and (max-width: $breakpoint-medium) {
+				display: block;
+			}
     }
   }
+	@media screen and (max-width: $breakpoint-medium) {
+		margin-top: $gapx;
+	}
 }

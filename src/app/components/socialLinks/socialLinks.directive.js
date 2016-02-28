@@ -10,9 +10,9 @@
 					$scope.links = [
 						{
 							id: 0,
-							title: 'Facebook',
-							icon: 'fa-facebook',
-							url: 'https://www.facebook.com/brian.staruk'
+							title: 'LinkedIn',
+							icon: 'fa-linkedin',
+							url: 'https://www.linkedin.com/in/brian-staruk-8370632a'
 						},
 						{
 							id: 1,
@@ -22,9 +22,15 @@
 						},
 						{
 							id: 2,
-							title: 'LinkedIn',
-							icon: 'fa-linkedin',
-							url: 'https://www.linkedin.com/in/brian-staruk-8370632a'
+							title: 'Facebook',
+							icon: 'fa-facebook',
+							url: 'https://www.facebook.com/brian.staruk'
+						},
+						{
+							id: 3,
+							title: 'Google Play Store',
+							icon: 'fa-android',
+							url: 'https://play.google.com/store/apps/developer?id=Brian+Staruk&hl=en'
 						}
 					];
 				}

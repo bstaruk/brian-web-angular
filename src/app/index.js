@@ -3,7 +3,6 @@
 
 	angular.module('brianWebAngular', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router'])
 		.config(function ($stateProvider, $urlRouterProvider) {
-
 			$stateProvider
 				.state('home', {
 					url: '/',
@@ -18,9 +17,8 @@
 					controllerAs: 'contact'
 				});
 			$urlRouterProvider.otherwise('/');
-
 		})
-		.run(function($rootScope, $window, $location, $timeout, $state) {
+		.run(function ($rootScope, $window, $location, $timeout, $state) {
 			$rootScope.state = $state;
 		});
 

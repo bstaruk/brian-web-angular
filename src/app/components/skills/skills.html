@@ -6,5 +6,9 @@
 				 ng-class="{ 'active': activeSkill == skill.id }">{{skill.title}}</a>
 		</li>
 	</ul>
-	<div ng-show="activeSkill != null" class="skills-desc">{{skills[activeSkill].desc}}</div>
+	<div class="skills-desc-wrapper">
+		<div ng-repeat="skill in skills track by skill.id" ng-show="activeSkill == skill.id" class="skills-desc">
+			{{skill.desc}}
+		</div>
+	</div>
 </div>

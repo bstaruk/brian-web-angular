@@ -11,13 +11,14 @@ body {
   background-size: 248px 248px;
   color: $color-white2;
   line-height: 1.4;
+	overflow: hidden;
 }
 
 .container {
   display: block;
-  max-width: 900px;
+  max-width: $site-max-width;
   margin: 0 auto;
-  padding: 0 $gapxx;
+  padding: 0 8%;
 }
 
 .page-header {
@@ -30,8 +31,42 @@ body {
     text-shadow: 1px 1px 0 #111;
     letter-spacing: .02em;
     margin-bottom: $gap;
+		@media screen and (max-width: $breakpoint-large) {
+			font-size: rem-calc(40);
+		}
+		@media screen and (max-width: $breakpoint-medium) {
+			font-size: rem-calc(36);
+		}
+		@media screen and (max-width: $breakpoint-small) {
+			font-size: rem-calc(32);
+		}
   }
   p {
     margin-bottom: $gap;
   }
+}
+
+[ui-view] {
+	&.ng-enter, &.ng-leave {
+		position: absolute;
+		left: 0;
+		right: 0;
+		@include transition(all .5s ease-in-out);
+	}
+	&.ng-enter {
+		opacity: 0;
+		@include transform(scale3d(0.5, 0.5, 0.5));
+	}
+	&.ng-enter-active {
+		opacity: 1;
+		@include transform(scale3d(1, 1, 1));
+	}
+	&.ng-leave {
+		opacity: 1;
+		@include transform(translate3d(0, 0, 0));
+	}
+	&.ng-leave-active {
+		opacity: 0;
+		@include transform(translate3d(100px, 0, 0));
+	}
 }

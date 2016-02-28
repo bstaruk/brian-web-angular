@@ -21,12 +21,12 @@
 						{
 							id: 2,
 							title: 'AngularJS',
-							desc: 'It\'s new(ish), it\'s amazing and I love it to pieces. This site is built with it, and so is my other project PriceBTC.com.'
+							desc: 'I love Angular to pieces. It\'s a blast to work with and it opens up so many doors, creatively. This site is built with it, and so is my other project PriceBTC.com.'
 						},
 						{
 							id: 3,
 							title: 'ReactJS',
-							desc: 'I\'ve used it with great success (very nice). While I prefer Angular for most projects, I\'m happy to have React in my tool belt and appreciate it\'s value for UI-heavy apps.'
+							desc: 'I\'ve used React with great success (very nice). While I prefer Angular for most projects, I\'m happy to have React in my tool belt and appreciate it\'s value for UI-heavy apps.'
 						},
 						{
 							id: 4,
@@ -46,7 +46,7 @@
 						{
 							id: 7,
 							title: 'Git',
-							desc: 'I would\'t want to work on a team that doesn\'t use git. I have been using it for years and hold it in extremely high regard. SVN sucks... there, I said it.'
+							desc: 'I\'ve seen Git used in many ways by many teams over the years and even the worst implementations are vastly better than none at all. I would\'nt want to go back to living in a world without it.'
 						},
 						{
 							id: 8,
