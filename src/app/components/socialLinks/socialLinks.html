@@ -1,0 +1,7 @@
+<ul class="social">
+	<li ng-repeat="link in links track by link.id">
+		<a href="{{link.url}}" title="{{link.title}}" target="_blank" ga-track-event="['socialLinks', 'click', '{{link.title}}']">
+			<i class="fa {{link.icon}}"></i>
+		</a>
+	</li>
+</ul>

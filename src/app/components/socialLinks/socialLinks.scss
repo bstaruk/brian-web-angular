@@ -1,0 +1,39 @@
+$social-button-height: 50px;
+$social-button-width: 50px;
+.social {
+	margin: $gapxx auto;
+	text-align: center;
+	li {
+		display: inline-block;
+		width: $social-button-width;
+		height: $social-button-height;
+		a {
+			position: relative;
+			display: block;
+			height: $social-button-height;
+			line-height: $social-button-height;
+			color: $color-white2;
+			font-size: rem-calc(28);
+			text-decoration: none;
+			text-shadow: 1px 1px 0 #111;
+			@include transition(all 0.3s ease);
+			&:before {
+				content: "";
+				position: absolute;
+				left: 10%;
+				bottom: 4px;
+				height: 4px;
+				max-height: 0;
+				width: 80%;
+				background-color: $color-white1;
+				@include transition(max-height 0.3s ease);
+			}
+			&:hover {
+				color: $color-white1;
+				&:before {
+					max-height: 3px;
+				}
+			}
+		}
+	}
+}

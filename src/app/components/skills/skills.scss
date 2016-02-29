@@ -1,0 +1,58 @@
+.skills-wrapper {
+	position: relative;
+	max-width: 80%;
+	margin: $gapxxx auto $gapxx;
+	text-align: center;
+	h3 {
+		font-family: $font-deco;
+		font-size: rem-calc(28);
+		color: $color-white1;
+		text-transform: lowercase;
+		text-shadow: 1px 1px 0 #111;
+		letter-spacing: .02em;
+		margin-bottom: $gap;
+		@media screen and (max-width: $breakpoint-medium) {
+			font-size: rem-calc(24);
+		}
+	}
+	.skills-list {
+		position: relative;
+		margin: 0 auto $gap;
+		max-width: 420px;
+		li {
+			display: inline-block;
+			font-size: rem-calc(15);
+			margin: 0 4px 4px 0;
+			outline: none;
+			a {
+				display: block;
+				padding: 7px 14px;
+				color: $color-white2;
+				text-decoration: none;
+				background-color: rgba(#000, .25);
+				border-radius: 3px;
+				@include transition(all 0.3s ease);
+				&.alt {
+					color: #b7328d;
+				}
+				&.active, &.active:hover {
+					color: $color-orange1;
+				}
+				&:hover {
+					color: $color-white1;
+				}
+			}
+		}
+	}
+	.skills-desc-wrapper {
+		position: relative;
+		.skills-desc {
+			position: absolute;
+			top: 0;
+			@include transition(all 0.3s ease);
+			&.ng-hide {
+				opacity: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+// FONT STYLES
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/sourcesanspro-regular.eot');
+  src: url('../assets/fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
+  url('../assets/fonts/sourcesanspro-regular.woff') format('woff'),
+  url('../assets/fonts/sourcesanspro-regular.ttf') format('truetype'),
+  url('../assets/fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Francois One';
+  src: url('../assets/fonts/francoisone-webfont.eot');
+  src: url('../assets/fonts/francoisone-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/francoisone-webfont.woff2') format('woff2'),
+  url('../assets/fonts/francoisone-webfont.woff') format('woff'),
+  url('../assets/fonts/francoisone-webfont.ttf') format('truetype'),
+  url('../assets/fonts/francoisone-webfont.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-deco: 'Francois One', Georgia, Times, 'Times New Roman', serif;
+$rem-base: 16px;
+
+// UTILITIES
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// COLORS
+$color-white1: #f3ecf5;
+$color-white2: #e0d9e2;
+$color-yellow1: #ffcc00;
+$color-orange1: #ffac25;
+$color-orange2: #ff7b2c;
+$color-purple1: #271c32;
+$color-purple2: #d6adf5;
+$color-green1: #8deb6d;
+$color-blue1: #81d1fc;
+
+
+// GAPS
+$gap: 10px;
+$gapx: 15px;
+$gapxx: 25px;
+$gapxxx: 40px;
+$gapxxxx: 50px;
+
+
+// BREAKPOINTS
+$site-max-width: 900px;
+$breakpoint-large: 600px;
+$breakpoint-medium: 500px;
+$breakpoint-small: 400px;
