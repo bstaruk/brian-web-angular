@@ -3,7 +3,8 @@
 	<ul class="skills-list">
 		<li ng-repeat="skill in skills track by skill.id">
 			<a href="#" ng-click="setActiveSkill(skill.id)"
-				 ng-class="{ 'active': activeSkill == skill.id }">{{skill.title}}</a>
+				 ng-class="{ 'active': activeSkill == skill.id }"
+				 ga-track-event="['skills', 'click', '{{skill.title}}']">{{skill.title}}</a>
 		</li>
 	</ul>
 	<div class="skills-desc-wrapper">
