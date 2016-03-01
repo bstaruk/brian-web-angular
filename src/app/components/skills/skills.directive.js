@@ -6,7 +6,7 @@
 			return {
 				restrict: 'E',
 				templateUrl: 'app/components/skills/skills.html',
-				controller: function ($scope, $location, $anchorScroll) {
+				controller: function ($scope, $anchorScroll) {
 					$scope.skills = [
 						{
 							id: 0,
@@ -58,8 +58,7 @@
 					$scope.activeSkill = 0;
 					$scope.setActiveSkill = function (id) {
 						$scope.activeSkill = id;
-						$location.hash('skillsClear');
-						$anchorScroll();
+						$anchorScroll('skillsClear');
 					}
 
 				}
