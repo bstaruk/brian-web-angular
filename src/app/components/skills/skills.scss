@@ -1,7 +1,7 @@
 .skills-wrapper {
 	position: relative;
 	max-width: 80%;
-	margin: $gapxxx auto $gapxx;
+	margin: $gapxxx auto 0;
 	text-align: center;
 	h3 {
 		font-family: $font-deco;
@@ -46,13 +46,19 @@
 	}
 	.skills-desc-wrapper {
 		position: relative;
+		min-height: 200px;
 		.skills-desc {
 			position: absolute;
 			top: 0;
+			margin-bottom: $gapxxx;
 			@include transition(all 0.3s ease);
 			&.ng-hide {
 				opacity: 0;
 			}
+		}
+		#skillsClear {
+			clear: both;
+			display: block;
 		}
 	}
 }

@@ -1,5 +1,5 @@
-$fa-font-path: "../../../bower_components/font-awesome/fonts";
-@import "../../../bower_components/font-awesome/scss/font-awesome.scss";
+//$fa-font-path: "../../../bower_components/font-awesome/fonts";
+//@import "../../../bower_components/font-awesome/scss/font-awesome.scss";
 @import "_normalize";
 @import "_functions";
 @import "_mixins";
@@ -11,7 +11,7 @@ body {
   background-size: 248px 248px;
   color: $color-white2;
   line-height: 1.4;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .container {
@@ -48,6 +48,8 @@ body {
 
 .ui-wrapper {
 	position: relative;
+	width: 100%;
+	max-width: 100%;
 	[ui-view] {
 		position: absolute;
 		left: 0;

@@ -33,7 +33,7 @@
 			AnalyticsProvider.trackPages(false);
 
 		})
-		.run(function ($rootScope, $window, $location, $timeout, $state, PageMeta) {
+		.run(function ($rootScope, $window, $location, $anchorScroll, $timeout, $state, PageMeta) {
 			$rootScope.state = $state;
 			$rootScope.PageMeta = PageMeta;
 		});

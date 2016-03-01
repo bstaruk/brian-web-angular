@@ -41,10 +41,20 @@
       }
 			@media screen and (max-width: $breakpoint-medium) {
 				display: block;
+				a {
+					&:before {
+						display: none;
+					}
+				}
+				&.active a {
+					&:before {
+						display: none;
+					}
+				}
 			}
     }
   }
 	@media screen and (max-width: $breakpoint-medium) {
-		margin-top: $gapx;
+		margin: $gapx auto;
 	}
 }
