@@ -46,7 +46,7 @@
 						{
 							id: 7,
 							title: 'Git',
-							desc: 'I\'ve seen Git used in many ways by many teams over the years and even the worst implementations are vastly better than none at all. I would\'nt want to go back to living in a world without it.'
+							desc: 'I\'ve seen Git used in many ways by many teams over the years and even the worst implementations are vastly better than none at all. I wouldn\'t want to go back to living in a world without it.'
 						},
 						{
 							id: 8,
