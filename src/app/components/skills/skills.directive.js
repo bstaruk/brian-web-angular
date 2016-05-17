@@ -26,12 +26,12 @@
 						{
 							id: 3,
 							title: 'ReactJS',
-							desc: 'I\'ve used React with great success (very nice). While I prefer Angular for most projects, I\'m happy to have React in my tool belt and appreciate it\'s value for UI-heavy apps.'
+							desc: 'I\'ve built with React and hold it in similar regard to Angular. Though it\'s rigid nature makes it a little less "magical" to develop on, the performance gains make it invaluable for UI-heavy projects.'
 						},
 						{
 							id: 4,
 							title: 'PHP',
-							desc: 'I\'ve been creating with PHP since I was a teenager and have always enjoyed the versatility and accessibility of the language and it\'s  community. There are a lot of PHP-haters out there, but it\'s served me well over the years and I am proud of (most of) the work I have done with it.'
+							desc: 'I\'ve been creating with PHP since I was a teenager and have always enjoyed the versatility and accessibility of the language and it\'s  community. There are a lot of haters out there, but it\'s served me well over the years and I am proud of (most of) the work I have done with it.'
 						},
 						{
 							id: 5,
