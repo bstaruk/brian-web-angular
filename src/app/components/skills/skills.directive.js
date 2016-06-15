@@ -36,12 +36,12 @@
 						{
 							id: 5,
 							title: 'WordPress',
-							desc: 'I have made dozens of sites with WordPress and would consider it to be a specialty of sorts. I have expert-level knowledge of crafting plugins and themes, as well as system buildouts and maintenance.'
+							desc: 'I have made dozens of sites with WordPress and consider it to be my specialty. I have expert-level knowledge of crafting plugins and themes, as well as system buildouts and maintenance. <a href="https://github.com/bstaruk/wordpress-starbase">I even maintain my own starter theme!</a>'
 						},
 						{
 							id: 6,
-							title: 'LAMP System Ops',
-							desc: 'My professional experience with building and maintaining servers is limited, but I run all of my own web servers and have for years.'
+							title: 'LAMP SysOps',
+							desc: 'My professional experience with building and maintaining servers is centered around the LAMP stack. I manage all of my own web servers and have for years.'
 						},
 						{
 							id: 7,

@@ -53,6 +53,9 @@
 			top: 0;
 			margin-bottom: $gapxxx;
 			@include transition(all 0.3s ease);
+			a {
+				color: $color-orange1;
+			}
 			&.ng-hide {
 				opacity: 0;
 			}

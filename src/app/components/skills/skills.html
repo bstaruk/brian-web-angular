@@ -9,7 +9,7 @@
 	</ul>
 	<div class="skills-desc-wrapper">
 		<div ng-repeat="skill in skills track by skill.id" ng-show="activeSkill == skill.id" class="skills-desc">
-			{{skill.desc}}
+			<div ng-bind-html="skill.desc"></div>
 		</div>
 		<a id="skillsClear"></a>
 	</div>
