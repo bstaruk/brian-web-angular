@@ -7,11 +7,14 @@
 body {
   font-family: $font-sans;
   font-size: rem-calc(16);
-  background: $color-purple1 url('../assets/images/bg-body.png') left top repeat;
+  background: $color-purple1 url('../assets/images/bg-body.png') center center repeat;
   background-size: 248px 248px;
   color: $color-white2;
   line-height: 1.4;
 	overflow-x: hidden;
+	@media screen and (max-width: $breakpoint-medium) {
+		background-size: 124px 124px;
+	}
 }
 
 a {
