@@ -1,9 +1,6 @@
 span.email {
-	display: inline-block;
-	vertical-align: middle;
-	width: 140px;
-	background: url('../assets/images/email.png') center center no-repeat;
-	color: rgba(#000, 0);
-	text-indent: -999em;
-	overflow: hidden;
+	&:after {
+		content: "bstaruk at gmail dot com";
+		color: $color-blue1;
+	}
 }

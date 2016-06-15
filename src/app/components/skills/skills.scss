@@ -47,15 +47,12 @@
 	}
 	.skills-desc-wrapper {
 		position: relative;
-		min-height: 200px;
+		min-height: 240px;
 		.skills-desc {
 			position: absolute;
 			top: 0;
 			margin-bottom: $gapxxx;
 			@include transition(all 0.3s ease);
-			a {
-				color: $color-orange1;
-			}
 			&.ng-hide {
 				opacity: 0;
 			}
