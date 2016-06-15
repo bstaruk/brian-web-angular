@@ -16,12 +16,12 @@
 						{
 							id: 1,
 							title: 'jQuery',
-							desc: 'The OG of modern web development. It isn\'t used as much as it once was, but I used jQuery for nearly a decade and it\'ll always have a special place in my heart... like a family dog that ate your shoes every once in a while, and did not age gracefully at all, but was otherwise pretty chill.'
+							desc: 'The OG of modern web development. It isn\'t utilized as much as it once was, but I used jQuery for nearly a decade and it\'ll always have a special place in my heart... like a family dog that ate your shoes every once in a while, and did not age gracefully at all, but was otherwise pretty chill.'
 						},
 						{
 							id: 2,
 							title: 'AngularJS',
-							desc: 'I love Angular to pieces. It\'s a blast to work with and it opens up so many doors, creatively. This site is built with it, and so is my other project PriceBTC.com.'
+							desc: 'I love Angular to pieces. It\'s a blast to work with and it opens up so many doors, creatively. This site is built with it, and so is my other project <a href="http://pricebtc.com" target="_blank">PriceBTC.com</a>.'
 						},
 						{
 							id: 3,
