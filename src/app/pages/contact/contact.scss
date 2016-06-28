@@ -1,6 +1,5 @@
 span.email {
 	&:after {
-		content: "bstaruk at gmail dot com";
-		color: $color-blue1;
+		content: "[bstaruk@gmail.com]";
 	}
 }

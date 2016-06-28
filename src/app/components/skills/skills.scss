@@ -29,7 +29,7 @@
 				padding: 7px 14px;
 				color: $color-white2;
 				text-decoration: none;
-				background-color: rgba(#000, .25);
+				background-color: rgba(#000, .2);
 				border-radius: 3px;
 				cursor: pointer;
 				@include transition(all 0.3s ease);
@@ -37,7 +37,7 @@
 					color: #b7328d;
 				}
 				&.active, &.active:hover {
-					color: $color-orange1;
+					color: $color-green1
 				}
 				&:hover {
 					color: $color-white1;
