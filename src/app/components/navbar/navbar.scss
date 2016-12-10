@@ -28,20 +28,31 @@
           position: absolute;
           left: 10%;
           bottom: 7px;
-          height: 4px;
+          height: 2px;
           width: 80%;
           background-color: $color-green1;
+					@include transition(all 0.3s ease);
         }
+				&:hover {
+					color: lighten($color-white2, 20%);
+				}
       }
       &.active a {
         color: $color-green1;
         &:before {
           display: block;
         }
+				&:hover {
+					color: lighten($color-green1, 20%);
+					&:before {
+						background-color: lighten($color-green1, 20%);
+					}
+				}
       }
 			@media screen and (max-width: $breakpoint-medium) {
 				display: block;
 				a {
+					padding: 10px 15px;
 					&:before {
 						display: none;
 					}
