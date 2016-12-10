@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../assets/fonts/sourcesanspro-regular.eot');
+	src: url('../assets/fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+	url('../assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
+	url('../assets/fonts/sourcesanspro-regular.woff') format('woff'),
+	url('../assets/fonts/sourcesanspro-regular.ttf') format('truetype'),
+	url('../assets/fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Francois One';
+	src: url('../assets/fonts/francoisone-webfont.eot');
+	src: url('../assets/fonts/francoisone-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../assets/fonts/francoisone-webfont.woff2') format('woff2'),
+	url('../assets/fonts/francoisone-webfont.woff') format('woff'),
+	url('../assets/fonts/francoisone-webfont.ttf') format('truetype'),
+	url('../assets/fonts/francoisone-webfont.svg#source_sans_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$fa-font-path: "../../bower_components/font-awesome/fonts";
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+	src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+	url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+	url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+	url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+	url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+	//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-sans: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-deco: 'Francois One', Georgia, Times, 'Times New Roman', serif;
+$rem-base: 16px;
